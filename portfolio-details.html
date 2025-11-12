@@ -8,6 +8,18 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
+  <!-- Base URL for GitHub Pages -->
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      // Remove the filename from the path
+      var pathParts = path.split('/').filter(function(p) { return p && !p.match(/\.html?$/); });
+      var basePath = pathParts.length > 0 ? '/' + pathParts.join('/') + '/' : '/';
+      var base = document.createElement('base');
+      base.href = basePath;
+      document.head.insertBefore(base, document.head.firstChild);
+    })();
+  </script>
 
   <!-- Favicons -->
   <link href="https://res.cloudinary.com/deowvk8rf/image/upload/v1762839331/Screenshot_2025-11-11_110435_lcwcf1.png" rel="icon">
